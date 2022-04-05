@@ -2,7 +2,7 @@ import React from 'react'
 import {Routes, Route} from 'react-router-dom'
 import NonRequireAuth from './authentication/NonRequireAuth'
 import RequireAuth from './authentication/RequireAuth'
-import Chat from './components/auth/chat/Chat'
+import MainLayout from './components/auth/mainLayout/MainLayout'
 import Login from './components/nonAuth/login/Login'
 import NotFound from './components/common/notFound/NotFound'
 import SignUp from './components/nonAuth/signUp/SignUp'
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           {/*Auth router*/}
           <Route path={'/'}>
-            <Route index element={<RequireAuth><Chat/></RequireAuth>}/>
+            <Route index element={<RequireAuth><MainLayout/></RequireAuth>}/>
           </Route>
 
           {/*Non-Auth router*/}

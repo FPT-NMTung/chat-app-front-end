@@ -1,0 +1,14 @@
+.main {
+    height          : 100%;
+
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+}
+
+ul {
+    list-style-type  : none;
+    padding          : 0;
+
+    background-color : #BFE8E1;
+}
