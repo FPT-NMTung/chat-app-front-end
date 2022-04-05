@@ -1,13 +1,37 @@
+:root {
+    --mainColor         : #00A389;
+    --mainColorLight    : #BFE8E1;
+    --infoColor         : #4e62de;
+    --infoColorLight    : #DFE1F9;
+    --errorColor        : #d0523f;
+    --errorColorLight   : #FFE0DA;
+    --warningColor      : #e09f26;
+    --warningColorLight : #F4EACF;
+
+    --whiteColor        : #ffffff;
+    --lightGrayColor    : #F0F3F6;
+    --grayColor         : #B3BDCC;
+    --blackColor        : #071232;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin                  : 0;
+    font-family             : 'Noto Sans', 'Sofia Pro', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+    background-color        : #DCDFE6;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family : source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+    color           : var(--mainColor);
+    text-decoration : none;
+    font-style      : italic;
+}
+
+a:hover {
+    text-decoration : underline;
 }

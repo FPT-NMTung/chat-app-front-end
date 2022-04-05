@@ -1,0 +1,25 @@
+.main {
+    position         : fixed;
+
+    bottom           : 10px;
+    left             : 10px;
+
+    padding          : 10px;
+    background-color : var(--whiteColor);
+    border-radius    : 50px;
+
+    display          : flex;
+    flex-direction   : row;
+    align-items      : center;
+}
+
+.content {
+    display   : none;
+    margin    : 0 5px 0 10px;
+
+    font-size : 12px;
+}
+
+.main:hover .content {
+    display : block;
+}

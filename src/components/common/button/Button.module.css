@@ -1,0 +1,51 @@
+.button {
+    border : 0;
+    cursor : pointer;
+}
+
+.button:active:not(.disabled) {
+    opacity: 0.85;
+}
+
+.small {
+    padding       : 8px 12px;
+    font-size     : 12px;
+    border-radius : 6px;
+}
+
+.medium {
+    padding       : 10px 15px;
+    font-size     : 15px;
+    border-radius : 8px;
+}
+
+.large {
+    padding       : 12px 20px;
+    font-size     : 18px;
+    border-radius : 10px;
+}
+
+.primary {
+    background-color : var(--mainColor);
+    color            : var(--mainColorLight);
+}
+
+.secondary {
+    background-color : var(--infoColor);
+    color            : var(--infoColorLight);
+}
+
+.danger {
+    background-color : var(--errorColor);
+    color            : var(--errorColorLight);
+}
+
+.warning {
+    background-color : var(--warningColor);
+    color            : var(--warningColorLight);
+}
+
+.disabled {
+    opacity : 0.5;
+    cursor  : not-allowed;
+}

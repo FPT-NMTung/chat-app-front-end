@@ -3,7 +3,7 @@ import commonFunc from '../common/CommonFunc'
 
 const NonRequireAuth = ({children}: {children: JSX.Element}) => {
   const location = useLocation()
-  const token = commonFunc.token.getToken()
+  const token = commonFunc.localStorage.token.get()
 
   if (token) {
     return <Navigate to={'/'} state={{from: location}} replace/>
