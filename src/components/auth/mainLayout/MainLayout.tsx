@@ -1,5 +1,6 @@
 import Navigation from '../navigation/Navigation'
-import Content from '../content/Content'
+import Chat from '../chat/Chat'
+import {Outlet} from 'react-router-dom'
 
 import classes from './MainLayout.module.css'
 
@@ -10,7 +11,7 @@ const MainLayout = () => {
         <Navigation/>
       </div>
       <div className={classes.content}>
-        <Content/>
+        <Outlet/>
       </div>
     </div>
   )
