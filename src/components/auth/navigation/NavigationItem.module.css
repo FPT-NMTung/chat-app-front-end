@@ -1,0 +1,22 @@
+.element {
+    height          : 44px;
+
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+.image {
+    padding       : 13px;
+
+    border-radius : 10px;
+}
+
+.match {
+    border-right : 3px solid var(--mainColor);
+    border-left  : 3px solid var(--whiteColor);
+}
+
+.match .image {
+    background-color : var(--mainColorLight);
+}

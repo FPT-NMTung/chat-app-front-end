@@ -1,0 +1,17 @@
+.main {
+    height          : 100%;
+
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+}
+
+.nav > ul {
+    list-style-type : none;
+    padding         : 0;
+}
+
+.logo {
+    text-align : center;
+    padding    : 12px 0;
+}

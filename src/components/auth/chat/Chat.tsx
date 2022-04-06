@@ -1,12 +1,16 @@
-import {Link} from 'react-router-dom'
+import classes from './Chat.module.css'
 
 const Chat = () => {
-  return (
-    <div>
-      <h1>Chat</h1>
-      <Link to={'/aaa'}>aaa</Link>
+  return <div className={classes.main}>
+    <div className={classes.content}>
+      <p>asd</p>
+      <p>asd</p>
+      <p>asd</p>
+      <p>asd</p>
+      <p>asd</p>
+      <p>asd</p>
     </div>
-  );
-};
+  </div>
+}
 
-export default Chat;
+export default Chat
