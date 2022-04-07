@@ -1,0 +1,70 @@
+.information {
+    text-align : center;
+    margin-top : 20px;
+
+    position   : relative;
+}
+
+.name {
+    font-weight : 500;
+    font-size   : 20px;
+    margin      : 10px 0 10px 0;
+}
+
+.dot {
+    width            : 10px;
+    height           : 10px;
+    background-color : var(--whiteColor);
+
+    border-radius    : 50px;
+    border           : 2px solid var(--whiteColor);
+
+    position         : absolute;
+    top              : 78px;
+    right            : 105px;
+}
+
+.dot.available {
+    background-color : var(--mainColor);
+}
+
+.dot.busy {
+    background-color : var(--warningColor);
+}
+
+.dot.offline {
+    background-color : var(--grayColor);
+}
+
+.image {
+    border-radius : 50em;
+}
+
+.select {
+    border           : none;
+    background-color : var(--mainColorLight);
+    padding          : 6px 16px;
+    color            : var(--mainColor);
+    border-radius    : 6px;
+    outline: none;
+}
+
+.select.available {
+    background-color : var(--mainColorLight);
+    color            : var(--mainColor);
+}
+
+.select.busy {
+    background-color : var(--warningColorLight);
+    color            : var(--warningColor);
+}
+
+.select.offline {
+    background-color : var(--lightGrayColor);
+    color            : var(--grayColor);
+}
+
+.option {
+    background-color: var(--whiteColor);
+    color           : var(--blackColor);
+}

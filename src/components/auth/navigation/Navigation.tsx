@@ -30,22 +30,20 @@ const Navigation = () => {
   return (
     <div className={classes.main}>
       <div className={classes.logo}>
-        <img width={40} src={logo} alt="logo"/>
+        <img width={30} src={logo} alt="logo"/>
       </div>
-      <div>
-        <nav className={classes.nav}>
-          <ul>
-            {listMenu.map((element) => (
-              <NavigationItem
-                key={element.id}
-                element={element}
-              />
-            ))}
-          </ul>
-        </nav>
-      </div>
+      <nav className={classes.nav}>
+        <ul>
+          {listMenu.map((element) => (
+            <NavigationItem
+              key={element.id}
+              element={element}
+            />
+          ))}
+        </ul>
+      </nav>
       <div className={classes.logo}>
-        <img width={40} src={logo} alt="logo"/>
+        <img width={30} src={logo} alt="logo"/>
       </div>
     </div>
   )

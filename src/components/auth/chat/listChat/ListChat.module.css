@@ -1,0 +1,67 @@
+.main {
+    min-width : 300px;
+    height    : 100%;
+    position  : relative;
+}
+
+.header {
+    height        : 65px;
+    width         : 100%;
+    border-bottom : 2px solid var(--lightGrayColor);
+}
+
+.content {
+    height : calc(100% - 65px);
+}
+
+.search {
+    width            : calc(100% - 40px);
+
+    border           : none;
+    border-radius    : 10px;
+    padding          : 12px 40px 12px 20px;
+
+    outline          : none;
+
+    background-color : var(--lightGrayColor);
+}
+
+.search::placeholder {
+    color : var(--grayColor);
+}
+
+.inputSearch {
+    margin-top  : 15px;
+
+    display     : flex;
+    align-items : center;
+}
+
+.buttonSearch {
+    outline          : none;
+    border           : none;
+    cursor           : pointer;
+    background-color : transparent;
+
+    margin-left      : -40px;
+}
+/*.list {*/
+/*    overflow-y : hidden;*/
+/*}*/
+
+/*.list:hover {*/
+/*    overflow-y : auto;*/
+/*}*/
+
+/*.list::-webkit-scrollbar-track {*/
+/*    border-radius : 10px;*/
+/*}*/
+
+/*.list::-webkit-scrollbar {*/
+/*    width : 8px;*/
+/*}*/
+
+/*.list::-webkit-scrollbar-thumb {*/
+/*    border-radius    : 10px;*/
+/*    background-color : #c0c0c0;*/
+/*}*/
