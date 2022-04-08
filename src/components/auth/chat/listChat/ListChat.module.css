@@ -2,6 +2,9 @@
     min-width : 300px;
     height    : 100%;
     position  : relative;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -45,23 +48,3 @@
 
     margin-left      : -40px;
 }
-/*.list {*/
-/*    overflow-y : hidden;*/
-/*}*/
-
-/*.list:hover {*/
-/*    overflow-y : auto;*/
-/*}*/
-
-/*.list::-webkit-scrollbar-track {*/
-/*    border-radius : 10px;*/
-/*}*/
-
-/*.list::-webkit-scrollbar {*/
-/*    width : 8px;*/
-/*}*/
-
-/*.list::-webkit-scrollbar-thumb {*/
-/*    border-radius    : 10px;*/
-/*    background-color : #c0c0c0;*/
-/*}*/

@@ -4,7 +4,7 @@ import {ElementMenu} from '../../../common/interface'
 
 const NavigationItem = ({element} : {element: ElementMenu}) => {
 
-  const isMatch = useMatch(element.url)
+  const isMatch = useMatch(element.url + '/*')
 
   return <li>
     <Link to={element.url}>

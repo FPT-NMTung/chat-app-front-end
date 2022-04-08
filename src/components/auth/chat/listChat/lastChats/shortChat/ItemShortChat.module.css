@@ -1,0 +1,50 @@
+.main {
+    display          : flex;
+    flex-direction   : row;
+    align-items      : center;
+    column-gap       : 14px;
+
+    padding          : 10px;
+    cursor           : pointer;
+
+    border-radius    : 6px;
+}
+
+.main.match {
+    background-color : var(--lightGrayColor);
+}
+
+.image {
+    width         : 36px;
+    height        : 36px;
+    border-radius : 50%;
+}
+
+.information {
+    width : 100%;
+}
+
+.lineName {
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    justify-content : space-between;
+}
+
+.name {
+    font-size   : 14px;
+    font-weight : 600;
+    margin      : 0 0 6px;
+}
+
+.status {
+    font-size : 10px;
+    margin    : 0;
+}
+
+.time {
+    width       : 65px;
+    font-size   : 14px;
+    font-weight : 400;
+    margin      : 0 0 10px;
+}

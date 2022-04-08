@@ -12,7 +12,10 @@ const listMenu: ElementMenu[] = [
   {
     id: 1,
     title: 'Chat',
-    url: '/',
+    url: '/chat',
+    subUrl: [
+      '/chat/:id',
+    ],
     iconDe: chatIconDeac,
     iconAc: chatIconAc
   },
@@ -20,6 +23,7 @@ const listMenu: ElementMenu[] = [
     id: 2,
     title: 'Setting',
     url: '/setting',
+    subUrl: [],
     iconDe: settingIconDeac,
     iconAc: settingIconAc
   }

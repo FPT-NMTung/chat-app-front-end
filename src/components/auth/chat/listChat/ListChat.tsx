@@ -2,6 +2,7 @@ import classes from './ListChat.module.css'
 import Information from './information/Information'
 
 import SearchIron from '../../../../images/search-icon.png'
+import LastChats from './lastChats/LastChats'
 
 const ListChat = () => {
   return <div className={classes.main}>
@@ -17,14 +18,12 @@ const ListChat = () => {
           className={classes.search}
         />
         <div>
-          <button className={classes.buttonSearch}>
+          <button className={classes.buttonSearch} type={'button'}>
             <img width={22} src={SearchIron} alt=""/>
           </button>
         </div>
       </div>
-      <div className={classes.list}>
-
-      </div>
+      <LastChats/>
     </div>
   </div>
 }

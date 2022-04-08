@@ -1,10 +1,16 @@
-import Navigation from '../navigation/Navigation'
 import Chat from '../chat/Chat'
-import {Outlet} from 'react-router-dom'
+import {Outlet, useMatch, Navigate} from 'react-router-dom'
 
 import classes from './MainLayout.module.css'
+import Navigation from '../navigation/Navigation'
 
 const MainLayout = () => {
+
+  const isHomeScreen = useMatch('/')
+  if (isHomeScreen) {
+    return <Navigate to="/chat"/>
+  }
+
   return (
     <div className={classes.main}>
       <div className={classes.nav}>
