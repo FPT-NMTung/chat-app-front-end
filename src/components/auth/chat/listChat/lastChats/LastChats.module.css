@@ -1,0 +1,78 @@
+.lastChat {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+    align-items     : center;
+    padding         : 10px 0;
+}
+
+.title {
+    color     : var(--darkGrayColor);
+    font-size : 14px;
+}
+
+.lastChat button {
+    display : block;
+    outline : none;
+    border  : none;
+    padding : 0;
+}
+
+.groupButton {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+    align-items     : center;
+
+    column-gap      : 4px;
+}
+
+.buttonAdd {
+    background-color : var(--mainColorLight);
+    border-radius    : 10px;
+    width            : 32px;
+    height           : 32px;
+    cursor           : pointer;
+}
+
+.buttonAdd > img,
+.buttonOption > img {
+    margin-top : 3px;
+}
+
+.buttonOption {
+    background-color : transparent;
+    border-radius    : 10px;
+    width            : 18px;
+    height           : 32px;
+    cursor           : pointer;
+}
+
+.list {
+    height     : 305px;
+    overflow-y : auto;
+}
+
+.list {
+    overflow-y : scroll;
+}
+
+.list:hover {
+    overflow-y : auto;
+}
+
+.list::-webkit-scrollbar-track {
+    border-radius : 10px;
+}
+
+.list::-webkit-scrollbar {
+    width    : 8px;
+    position : absolute;
+    right    : 0;
+    top      : 0;
+}
+
+.list::-webkit-scrollbar-thumb {
+    border-radius    : 10px;
+    background-color : #c0c0c0;
+}

@@ -4,6 +4,7 @@ export interface ElementMenu {
   id: number,
   title: string,
   url: string,
+  subUrl: string[],
   iconDe: string,
   iconAc: string,
 }

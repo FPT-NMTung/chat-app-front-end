@@ -11,6 +11,7 @@
     --whiteColor        : #ffffff;
     --lightGrayColor    : #F0F3F6;
     --grayColor         : #B3BDCC;
+    --darkGrayColor     : #818C9F;
     --blackColor        : #071232;
 }
 
@@ -27,11 +28,6 @@ code {
 }
 
 a {
-    color           : var(--mainColor);
+    color           : var(--blackColor);
     text-decoration : none;
-    font-style      : italic;
-}
-
-a:hover {
-    text-decoration : underline;
 }

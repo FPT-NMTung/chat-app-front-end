@@ -12,7 +12,10 @@ const listMenu: ElementMenu[] = [
   {
     id: 1,
     title: 'Chat',
-    url: '/',
+    url: '/chat',
+    subUrl: [
+      '/chat/:id',
+    ],
     iconDe: chatIconDeac,
     iconAc: chatIconAc
   },
@@ -20,6 +23,7 @@ const listMenu: ElementMenu[] = [
     id: 2,
     title: 'Setting',
     url: '/setting',
+    subUrl: [],
     iconDe: settingIconDeac,
     iconAc: settingIconAc
   }
@@ -30,22 +34,20 @@ const Navigation = () => {
   return (
     <div className={classes.main}>
       <div className={classes.logo}>
-        <img width={40} src={logo} alt="logo"/>
+        <img width={30} src={logo} alt="logo"/>
       </div>
-      <div>
-        <nav className={classes.nav}>
-          <ul>
-            {listMenu.map((element) => (
-              <NavigationItem
-                key={element.id}
-                element={element}
-              />
-            ))}
-          </ul>
-        </nav>
-      </div>
+      <nav className={classes.nav}>
+        <ul>
+          {listMenu.map((element) => (
+            <NavigationItem
+              key={element.id}
+              element={element}
+            />
+          ))}
+        </ul>
+      </nav>
       <div className={classes.logo}>
-        <img width={40} src={logo} alt="logo"/>
+        <img width={30} src={logo} alt="logo"/>
       </div>
     </div>
   )

@@ -12,7 +12,7 @@
     width         : 100%;
     padding       : 20px;
 
-    border-left   : 1px solid var(--lightGrayColor);
+    border-left   : 2px solid var(--lightGrayColor);
     border-radius : 20px;
 }
 

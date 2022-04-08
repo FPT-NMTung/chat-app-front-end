@@ -23,3 +23,13 @@
 .main:hover .content {
     display : block;
 }
+
+.link {
+    color           : var(--mainColor);
+    text-decoration : none;
+    font-style      : italic;
+}
+
+.link:hover {
+    text-decoration : underline;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, useMatch, useNavigate} from 'react-router-dom'
 
 import NonRequireAuth from './authentication/NonRequireAuth'
 import RequireAuth from './authentication/RequireAuth'
@@ -14,12 +14,15 @@ import Setting from './components/auth/setting/Setting'
 import classes from './App.module.css'
 
 function App() {
+
   return (
     <div className={classes.main}>
       <div className={classes.card}>
         <Routes>
           <Route path={'/'} element={<RequireAuth><MainLayout/></RequireAuth>}>
-            <Route index element={<Chat/>}/>
+            <Route path={'/chat'} element={<Chat/>}>
+              <Route path={'/chat/:userId'} element={<Chat/>}/>
+            </Route>
             <Route path={'/setting'} element={<Setting/>}/>
           </Route>
           <Route path={'/auth'}>
