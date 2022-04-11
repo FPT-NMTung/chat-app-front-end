@@ -9,11 +9,16 @@ export interface ElementMenu {
   iconAc: string,
 }
 
-export interface PropsInterface {
+export interface PropsInterfaceButton {
   text: string,
   ref?: LegacyRef<HTMLButtonElement>,
   size?: 'small' | 'medium' | 'large',
   color?: 'primary' | 'secondary' | 'danger' | 'warning',
   disabled?: boolean,
   onClick?: MouseEventHandler<HTMLButtonElement>
+}
+
+export interface PropsInterfaceListChat {
+  list: any[],
+  isShow?: boolean,
 }

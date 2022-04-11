@@ -14,7 +14,8 @@ const listMenu: ElementMenu[] = [
     title: 'Chat',
     url: '/chat',
     subUrl: [
-      '/chat/:id',
+      '/chat/*',
+      '/chat',
     ],
     iconDe: chatIconDeac,
     iconAc: chatIconAc
