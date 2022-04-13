@@ -1,13 +1,19 @@
 import classes from './ListChat.module.css'
 import Information from './information/Information'
-
-import SearchIron from '../../../../images/search-icon.png'
 import LastChats from './lastChats/LastChats'
 
-const ListChat = () => {
-  return <div className={classes.main}>
-    <div className={classes.header}>
+import {PropsInterfaceListChat} from '../../../../common/interface'
+import SearchIron from '../../../../images/search-icon.png'
+import ArrowLeftIcon from '../../../../images/arrow-left-icon.png'
 
+const ListChat = ({list}: PropsInterfaceListChat) => {
+
+  return <div className={`${classes.main}`}>
+    <div className={classes.header}>
+      <div className={classes.imageBack}>
+        <img src={ArrowLeftIcon} alt="" height={12} width={12}/>
+      </div>
+      <p className={classes.title}>Chat</p>
     </div>
     <div className={classes.content}>
       <Information/>
@@ -23,7 +29,7 @@ const ListChat = () => {
           </button>
         </div>
       </div>
-      <LastChats/>
+      <LastChats list={list}/>
     </div>
   </div>
 }

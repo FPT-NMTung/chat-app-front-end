@@ -1,5 +1,5 @@
 import classes from './Button.module.css'
-import {PropsInterface} from '../../../common/interface'
+import {PropsInterfaceButton} from '../../../common/interface'
 
 const Button = (
   {
@@ -9,7 +9,7 @@ const Button = (
     color,
     disabled,
     onClick
-  }: PropsInterface
+  }: PropsInterfaceButton
 ) => {
 
   const className = `${classes.button} ${classes[size ? size : 'medium']} ${classes[color ? color : 'primary']} ${disabled ? classes.disabled : ''}`

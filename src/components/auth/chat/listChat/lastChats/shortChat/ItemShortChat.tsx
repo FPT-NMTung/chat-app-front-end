@@ -9,7 +9,7 @@ const ItemShortChat = (props: any) => {
     <img className={classes.image}
          src="https://res.cloudinary.com/dvuqazqqs/image/upload/v1648107876/t0sp87k11qaewzleayql.jpg"
          alt="avatar"/>
-    <div className={classes.information}>
+    <div className={`${classes.information}`}>
       <div className={classes.lineName}>
         <p className={classes.name}>{props.name}</p>
         <p className={classes.time}>30 month</p>

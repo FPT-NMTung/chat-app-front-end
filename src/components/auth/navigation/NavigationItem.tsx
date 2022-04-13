@@ -1,14 +1,28 @@
-import {Link, useMatch} from 'react-router-dom'
+import {Link, NavLink, useMatch} from 'react-router-dom'
 import classes from './NavigationItem.module.css'
 import {ElementMenu} from '../../../common/interface'
+import {MouseEvent, useEffect} from 'react'
 
-const NavigationItem = ({element} : {element: ElementMenu}) => {
+const NavigationItem = ({element}: { element: ElementMenu }) => {
 
   const isMatch = useMatch(element.url + '/*')
 
+  const handlerCLickLink = (event: MouseEvent<HTMLAnchorElement>) => {
+    const check = element.subUrl.find((subUrl) => subUrl === isMatch?.pattern.path)
+    if (check) {
+      event.preventDefault()
+    }
+  }
+
   return <li>
-    <Link to={element.url}>
-      <div className={`${classes.element} ${isMatch ? classes.match : ''}`}>
+    <NavLink
+      to={element.url}
+      className={({isActive}) => {
+        return isActive ? classes.match : ''
+      }}
+      onClick={handlerCLickLink}
+    >
+      <div className={`${classes.element}`}>
         <img
           title={element.title}
           className={classes.image}
@@ -17,8 +31,8 @@ const NavigationItem = ({element} : {element: ElementMenu}) => {
           alt={element.title}
         />
       </div>
-    </Link>
+    </NavLink>
   </li>
 }
 
-export default NavigationItem;
+export default NavigationItem

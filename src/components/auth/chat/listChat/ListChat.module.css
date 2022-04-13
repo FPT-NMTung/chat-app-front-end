@@ -1,16 +1,47 @@
 .main {
-    min-width : 300px;
-    height    : 100%;
-    position  : relative;
+    min-width      : 300px;
+    height         : 100%;
+    position       : relative;
 
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
+}
+
+.main.isNotOpen {
+    min-width      : 70px;
 }
 
 .header {
     height        : 65px;
     width         : 100%;
     border-bottom : 2px solid var(--lightGrayColor);
+
+    display       : flex;
+    align-content : center;
+}
+
+.imageBack {
+    cursor : pointer;
+}
+
+.header img {
+    margin-top       : 6px;
+    padding          : 13px;
+    border-radius    : 10px;
+
+    background-color : var(--lightGrayColor);
+
+    transition       : transform 0.5s;
+}
+
+.header img.isRotate {
+    transform : rotate(180deg);
+}
+
+.header .title {
+    margin-top  : 14px;
+    margin-left : 10px;
+    font-weight : 500;
 }
 
 .content {
@@ -47,4 +78,12 @@
     background-color : transparent;
 
     margin-left      : -40px;
+}
+
+.isNotOpen .title {
+    display : none;
+}
+
+.isNotOpen .inputSearch {
+    display : none;
 }

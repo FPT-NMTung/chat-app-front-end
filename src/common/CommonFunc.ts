@@ -1,37 +1,39 @@
 const commonFunc = {
   localStorage: {
     token: {
-      /**
-       * Get token from localStorage
-       * @returns token | null
-       */
-      get: function () {
+      get: function () : string | null {
         return localStorage.getItem('token')
       },
-
-      /**
-       * Set token to localStorage
-       * @param token string
-       */
       set: function (token: string) {
         localStorage.setItem('token', token)
+      },
+      remove: function () {
+        localStorage.removeItem('token')
       }
     },
     theme: {
-      /**
-       * Get theme from localStorage
-       * @returns theme | null
-       */
       get: function (): string | null {
         return localStorage.getItem('theme')
       },
-
-      /**
-       * Set theme to localStorage
-       * @param theme 'dark' | 'light'
-       */
       set: function (theme: 'dark' | 'light') {
         localStorage.setItem('theme', theme)
+      },
+      remove: function () {
+        localStorage.removeItem('theme')
+      }
+    },
+    showLastChat: {
+      get: function (): boolean | null {
+        if (localStorage.getItem('showLastChat') === null) {
+          return null
+        }
+        return localStorage.getItem('showLastChat') === 'true'
+      },
+      set: function (showLastChat: boolean) {
+        localStorage.setItem('showLastChat', showLastChat.toString())
+      },
+      remove: function () {
+        localStorage.removeItem('showLastChat')
       }
     }
   }

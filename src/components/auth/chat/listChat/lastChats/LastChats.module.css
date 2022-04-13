@@ -6,6 +6,10 @@
     padding         : 10px 0;
 }
 
+.lastChat.isNotShow {
+    display : none;
+}
+
 .title {
     color     : var(--darkGrayColor);
     font-size : 14px;

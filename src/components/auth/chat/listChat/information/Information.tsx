@@ -1,5 +1,5 @@
 import classes from './Information.module.css'
-import {ChangeEvent, useEffect, useState} from 'react'
+import {ChangeEvent, useState} from 'react'
 
 enum statusEnum {
   'available',
@@ -20,7 +20,7 @@ const Information = () => {
     }
   }
 
-  return <div className={classes.information}>
+  return <div className={`${classes.information}`}>
     <div>
       <img className={classes.image} width={100}
            src="https://res.cloudinary.com/dvuqazqqs/image/upload/v1648107876/t0sp87k11qaewzleayql.jpg"
@@ -29,7 +29,8 @@ const Information = () => {
         className={`${classes.dot} ${status === statusEnum.available ? classes.available : (status === statusEnum.busy ? classes.busy : classes.offline)}`}/>
     </div>
     <p className={classes.name}>Nguyen Manh Tung</p>
-    <select value={status} onChange={handlerStatusChange} className={`${classes.select} ${status === statusEnum.available ? classes.available : (status === statusEnum.busy ? classes.busy : classes.offline)}`}>
+    <select value={status} onChange={handlerStatusChange}
+            className={`${classes.select} ${status === statusEnum.available ? classes.available : (status === statusEnum.busy ? classes.busy : classes.offline)}`}>
       <option className={classes.option} value={statusEnum.available}>available</option>
       <option className={classes.option} value={statusEnum.busy}>busy</option>
       <option className={classes.option} value={statusEnum.offline}>offline</option>
