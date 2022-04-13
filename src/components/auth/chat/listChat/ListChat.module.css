@@ -7,6 +7,10 @@
     flex-direction : column;
 }
 
+.main.isNotOpen {
+    min-width      : 70px;
+}
+
 .header {
     height        : 65px;
     width         : 100%;

@@ -1,5 +1,5 @@
 import classes from './Information.module.css'
-import {ChangeEvent, useEffect, useState} from 'react'
+import {ChangeEvent, useState} from 'react'
 
 enum statusEnum {
   'available',
@@ -7,7 +7,7 @@ enum statusEnum {
   'offline'
 }
 
-const Information = ({isShow}: { isShow: boolean }) => {
+const Information = () => {
   const [status, setStatus] = useState(statusEnum.offline)
 
   const handlerStatusChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -20,7 +20,7 @@ const Information = ({isShow}: { isShow: boolean }) => {
     }
   }
 
-  return <div className={`${classes.information} ${isShow ? '' : classes.isNotShow}`}>
+  return <div className={`${classes.information}`}>
     <div>
       <img className={classes.image} width={100}
            src="https://res.cloudinary.com/dvuqazqqs/image/upload/v1648107876/t0sp87k11qaewzleayql.jpg"

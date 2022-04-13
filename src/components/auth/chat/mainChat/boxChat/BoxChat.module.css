@@ -1,0 +1,75 @@
+.main {
+    width            : 65%;
+    background-color : var(--lightGrayColor);
+
+    position         : relative;
+    border-radius    : 12px;
+}
+
+
+.header {
+    height        : 65px;
+    width         : 100%;
+    border-bottom : 1px solid #dbdce1;
+
+    position      : absolute;
+    top           : 0;
+    left          : 0;
+
+    display       : flex;
+    align-items   : center;
+}
+
+.title {
+    font-size    : 16px;
+    font-weight  : 500;
+    padding-left : 20px;
+}
+
+.control {
+    position : absolute;
+    bottom   : 0;
+    left     : 0;
+
+    width    : 100%;
+}
+
+.inputChat {
+    margin           : 14px;
+    padding          : 8px;
+    border-radius    : 10px;
+
+    box-shadow       : 0 0 20px 0 rgba(173, 173, 173, 0.1);
+
+    background-color : var(--whiteColor);
+
+    display          : flex;
+    flex-direction   : row;
+    align-items      : center;
+
+    column-gap       : 20px;
+}
+
+.inputText {
+    width   : 100%;
+
+    outline : none;
+    border  : 0;
+    padding : 10px 10px;
+}
+
+.buttonSend {
+    width            : 34px;
+    min-width        : 34px;
+    height           : 34px;
+
+    border-radius    : 8px;
+
+    outline          : none;
+    border           : 0;
+    background-color : var(--mainColor);
+}
+
+.buttonSend img {
+    margin-top: 4px;
+}

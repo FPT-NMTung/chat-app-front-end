@@ -20,5 +20,4 @@ export interface PropsInterfaceButton {
 
 export interface PropsInterfaceListChat {
   list: any[],
-  isShow?: boolean,
 }

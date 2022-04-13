@@ -1,17 +1,15 @@
 import classes from './LastChats.module.css'
-import {Fragment, useEffect} from 'react'
-import {useNavigate} from 'react-router-dom'
+import {Fragment} from 'react'
 
 import AddIcon from '../../../../../images/add-icon.png'
 import ThreeDotIcon from '../../../../../images/three-dot-icon.png'
 import ItemShortChat from './shortChat/ItemShortChat'
 import {PropsInterfaceListChat} from '../../../../../common/interface'
 
-const LastChats = ({list, isShow} : PropsInterfaceListChat) => {
-  const navigate = useNavigate()
+const LastChats = ({list} : PropsInterfaceListChat) => {
 
   return <Fragment>
-    <div className={classes.lastChat}>
+    <div className={`${classes.lastChat}`}>
       <p className={classes.title}>Last chats</p>
       <div className={classes.groupButton}>
         <button className={classes.buttonAdd}>
@@ -22,7 +20,7 @@ const LastChats = ({list, isShow} : PropsInterfaceListChat) => {
         </button>
       </div>
     </div>
-    <div className={classes.list}>
+    <div className={`${classes.list}`}>
       {list.map((element) => {
         return <ItemShortChat key={element.id} {...element}/>
       })}
