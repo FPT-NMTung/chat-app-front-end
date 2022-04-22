@@ -1,0 +1,50 @@
+.main {
+    display        : flex;
+    flex-direction : row;
+    align-items    : flex-end;
+    margin-left    : 14px;
+    margin-top     : 10px;
+    column-gap     : 5px;
+}
+
+.itemChat {
+    background-color           : var(--whiteColor);
+    color                      : black;
+    padding                    : 8px 14px;
+    margin                     : 1px 0;
+
+    max-width                  : 350px;
+    width                      : max-content;
+
+    border-bottom-right-radius : 16px;
+    border-top-right-radius    : 16px;
+
+    font-size                  : 13px;
+}
+
+.itemChat.header {
+    border-bottom-left-radius : 5px;
+    border-top-left-radius    : 16px;
+}
+
+.itemChat.body {
+    border-bottom-left-radius : 5px;
+    border-top-left-radius    : 5px;
+}
+
+.itemChat.footer {
+    border-bottom-left-radius : 16px;
+    border-top-left-radius    : 5px;
+}
+
+.avatar {
+    width         : 36px;
+    height        : 36px;
+
+    border-radius : 10em;
+}
+
+.mainChat {
+    display        : flex;
+    flex-direction : column;
+}

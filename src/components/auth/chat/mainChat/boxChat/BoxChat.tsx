@@ -1,11 +1,15 @@
 import classes from './BoxChat.module.css'
+import RightChat from './rightChat/RightChat'
+import LeftChat from './leftChat/LeftChat'
 
 const BoxChat = () => {
   return <div className={classes.main}>
     <div className={classes.header}>
       <h1 className={classes.title}>Group Chat</h1>
     </div>
-    <div>
+    <div className={classes.body}>
+      <RightChat/>
+      <LeftChat/>
     </div>
     <div className={classes.control}>
       <div className={classes.inputChat}>
